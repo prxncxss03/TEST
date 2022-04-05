@@ -1,0 +1,14 @@
+image: 
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: 'composer create-project laravel/laravel  laravel'
+
+ports:
+  - port: 3000
+    visibility: private
+
+vscode:
+  extensions:
+    - felixfbecker.php-debug
+
