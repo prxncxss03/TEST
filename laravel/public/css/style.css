@@ -11,16 +11,34 @@
     background-color: #03045e;
 }
 
+th,tr{
+    text-align: center;
+}
+
+table{
+  
+    border-radius: 0.5rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
 #main-nav a{
     color: white;
+    font-weight: bold;
+}
+
+
+#main-nav a:hover{
+    color: rgb(185, 181, 181);
+    transition: ease-in;
+    border-radius: 0.5rem;
     font-weight: bold;
 }
 #content-wrap{
     height: 100%;
     background-color: #bde0fe;
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 #loginIndex{
