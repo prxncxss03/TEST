@@ -1,5 +1,7 @@
 @extends('structure')
+
 @section('exit')
+<script>alert("hello")</script>
 <div  id="exitWeb" class="modal" tabindex="-1">
   <div class="modal-dialog">
     <div class="modal-content">

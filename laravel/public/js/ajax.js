@@ -1,7 +1,7 @@
 $(function(){
   $('#logout').on('click', function(){
     
-    $('#exitWeb').modal('show');
+    alert("Log out");
   })
     const BASEURL = "https://8000-j1hu-hackathonemploy-k893qi5hggf.ws-us38.gitpod.io";
 
