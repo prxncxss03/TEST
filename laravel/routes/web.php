@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AppController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [AppController::class,'index']) -> name('home.index');
+Route::get('/employees', [AppController::class,'employee']) -> name('home.employees');
+Route::get('/payroll', [AppController::class,'payroll']) -> name('home.payroll');

@@ -1,0 +1,12 @@
+#overall-wrapper{
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+#content-wrap{
+    height: 100%;
+    background-color: #CEE5ED;
+}
