@@ -16,27 +16,28 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="/css/style.css">
     </head>
     <body id="overall-wrapper">
-        <ul class="nav d-flex justify-content-between align-items-center m-2">
+        <ul id="main-nav" class="nav  d-flex justify-content-between align-items-center ">
        
-            <a class="navbar-brand d-flex align-items-center " href="/index">
-                <img src="/images/lvlogo.jpg" alt="La Verdad logo" width="50" height="50" class="d-inline-block align-text-top me-2">
+            <a class="navbar-brand d-flex align-items-center p-2" href="/">
+                <img src="/images/lvlogo.jpg" alt="La Verdad logo" width="50" height="50" class="d-inline-block align-text-top mx-2 rounded-circle ">
                 La Verdad
             </a>
             <div class="d-flex justify-content-center">
 
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Employees</a>
+                    <a class="nav-link active" aria-current="page" href="/employees">Employees</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Payroll</a>
+                    <a class="nav-link" href="/payroll">Payroll</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Logout</a>
+                    <a class="nav-link" href="">Logout</a>
                 </li>
             </div>
             
@@ -44,6 +45,7 @@
        
         <div id="content-wrap">
         @yield('loginForm')
+        @yield('employeesTable')
         </div>
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

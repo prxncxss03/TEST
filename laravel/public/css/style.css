@@ -6,7 +6,45 @@
     height: 100vh;
 }
 
+#main-nav{
+    color: white;
+    background-color: #03045e;
+}
+
+#main-nav a{
+    color: white;
+    font-weight: bold;
+}
 #content-wrap{
     height: 100%;
-    background-color: #CEE5ED;
+    background-color: #bde0fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginIndex{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    
+    
+}
+
+
+
+.fa-user{
+    color: white;
+    padding: 1rem;
+    background-color:#03045e ;
+    border-radius: 50%;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.5rem;
+    
+    
 }
