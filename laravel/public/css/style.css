@@ -21,13 +21,18 @@ table{
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-#main-nav a{
+.nav-item{
+    font-size: 1.1rem;
+}
+
+#main-nav a, .logout{
     color: white;
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
 
-#main-nav a:hover{
+#main-nav a:hover, .logout:hover{
     color: rgb(185, 181, 181);
     transition: ease-in;
     border-radius: 0.5rem;

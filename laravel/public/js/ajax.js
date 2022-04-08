@@ -1,5 +1,8 @@
 $(function(){
-
+  $('#logout').on('click', function(){
+    
+    $('#exitWeb').modal('show');
+  })
     const BASEURL = "https://8000-j1hu-hackathonemploy-k893qi5hggf.ws-us38.gitpod.io";
 
     loadEmployees();
@@ -63,6 +66,10 @@ $(function(){
         var sickLeaveCredits = $('#sickLeaveCredits').val();
         var vacationLeaveCredits = $('#vacationLeaveCredits').val();
         var hourlyRate = $('#hourlyRate').val();
+
+        if (!firstName || !lastName ||!position || !sickLeaveCredits || !vacationLeaveCredits || !hourlyRate){
+          alert('Please complete all the fields');
+        }
         var id = $('#saveEmployee').data('id');
         var request = $.ajax({
             url: id ? BASEURL + `/api/management/employee/${id}` : "/api/management/employee",
@@ -128,5 +135,7 @@ $(function(){
         }
       });
     }
+
+    
 
 });

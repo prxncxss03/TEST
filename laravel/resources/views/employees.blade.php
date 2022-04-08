@@ -3,7 +3,7 @@
 @section('employeesModal')
 <div class=" d-flex flex-column align-content-start mt-4  col-11" >
 
-    <div class="alert alert-danger d-none mt-2" id="errorMsg" role="alert">
+    <div class="alert alert-danger text-center d-none mt-2" id="errorMsg" role="alert">
         Something went wrong!
     </div>
     <div class="w-100 d-flex justify-content-end">
